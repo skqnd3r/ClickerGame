@@ -1,0 +1,32 @@
+Code
+into json obj
+    Minions
+    levels
+    
+function create link
+    img as call api
+        http://drive.google.com/uc?export=view&id=
+
+
+values of session
+UI
+functions
+gameactivity
+
+FONCTIONNALITE
+
+
+autosave bug
+load multipletime timer bug
+onhold buy par tps
+onhover gialogue 0/100
+
+curseur doigt
+curseur fouet
+
+son bruit caverne
+et coup de fouet
+
+DESIGN
+billion etc / plus de place
+finir les couleurs

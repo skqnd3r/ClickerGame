@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fondamento', cursive;
+    font-size: 2.2vh;
+
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background: no-repeat right url(./ressources/Pinceau.png);
+    background-size: cover;
+}
+
+section.store {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.title {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+img.minions {
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 60px;
+    border: 1px solid black;
+    background-color: #4f6d7a25;
+    border-radius: 1px;
+}
+
+div.tableau {
+    background-color: rgba(27, 25, 25, 0.877);
+    border: 0.5px solid rgba(53, 51, 51, 0.432);
+    border-radius: 5px;
+    box-shadow: 0px 0px 70px rgb(0, 0, 0);
+    align-self: center;
+    margin: 1vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+div.minions {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.459);
+    display: flex;
+    flex-direction: column;
+}
+
+div.minions2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.minions3 {
+    display: flex;
+    flex-direction: row;
+}
+
+div.minions4 {
+    display: flex;
+    flex-direction: row;
+}
+
+ul.minions {
+    padding-left: 1vw;
+    padding-top: 1vh;
+    width: 20vw;
+}
+
+li.minions {
+    margin-bottom: 1vh;
+    width: max-content;
+}
+
+li.mname {
+    font-size: larger;
+    color: #4f6d7a;
+}
+
+span.minions {
+    color: gold;
+}
+
+img.money {
+    height: 3vh;
+    margin-right: 1vh;
+    vertical-align: bottom;
+}
+
+h1.minions {
+    align-self: center;
+    font-size: x-large;
+    width: 20px;
+    margin-right: 5vh;
+    color: #2de0b4;
+}
+
+button.minions {
+    height: 4vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    margin-top: 1vh;
+    margin-right: 2vw;
+    align-self: center;
+}
+
+div.progress {
+    margin: 1vh;
+    margin-left: 1.5vh;
+    width: 100%;
+    background-color: #0d4436;
+    border-radius: 3px;
+}
+
+div.bar {
+    height: 2px;
+    background-color: #2de0b4;
+    border-radius: 1px;
+}
+
+div.lvl {
+    width: 3vw;
+    font-size: 1.4vh;
+    text-align: center;
+    color: #2de0b4;
+}
+
+div.gps {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: #2de0b4;
+}
+
+div.gps2 {
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img.gps1 {
+    height: 10vh;
+    margin-right: -1vw;
+}
+img.gps2 {
+    height: 7vh;
+    margin-right: 1vh;
+}
+
+div.right {
+    flex: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.pers {
+    flex: 1;
+    color: gold;
+}
+
+h1.info {
+    text-align: center;
+    font-size: x-large;
+    color: #c00021;
+}
+
+span.info {
+    font-size: x-large;
+}
+
+div.info {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 3vw;
+}
+
+div.pers2 {
+    width: 100%;
+    background-color: rgb(80, 68, 0);
+}
+
+div.pers3 {
+    background-color: gold;
+}
+
+
+div.click {
+    flex: 5;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.mining {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+img.mine {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 35vh;
+    bottom: 0px;
+    margin-top: 25vh;
+}
+
+img.rock {
+    pointer-events: none;
+}
+
+section.gold {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+div.gold {
+    flex: 0.6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: gold;
+}
+
+button.gold {
+    height: fit-content;
+    padding-right: 1vh;
+    padding-left: 1vh;
+}

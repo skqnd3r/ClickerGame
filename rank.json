@@ -1,0 +1,46 @@
+{
+    "data" : [
+        {
+            "own": 0,
+            "step": 0,
+            "level": 0,
+            "multiplier": 1,
+            "name": "Cute"
+        },
+        {
+            "own": 25,
+            "step": 0,
+            "level": 1,
+            "multiplier": 4,
+            "name": "Handsome"
+        },
+        {
+            "own": 50,
+            "step": 25,
+            "level": 2,
+            "multiplier": 8,
+            "name": "Vigorous"
+        },
+        {
+            "own": 100,
+            "step": 50,
+            "level": 3,
+            "multiplier": 16,
+            "name": "Savage"
+        },
+        {
+            "own": 250,
+            "step": 100,
+            "level": 4,
+            "multiplier": 32,
+            "name": "Insane"
+        },
+        {
+            "own": 1000,
+            "step": 250,
+            "level": 5,
+            "multiplier": 64,
+            "name": "God"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Imp",
+        "class": "imp",
+        "img": "1E6rF2pZTCrEPGiWCSLBZatUa0hCxcCSj",
+        "cost": 10,
+        "gps": 0.1,
+        "owned": 0,
+        "level": 0
+    },
+    {
+        "id": 2,
+        "name": "Demon Spawner",
+        "class": "demon_spawner",
+        "img": "1G4-M5ool-g5eZK6X4-wehhWuf07DZ-wa",
+        "cost": 100,
+        "gps": 1,
+        "owned": 0,
+        "level": 0
+    },
+    {
+        "id": 3,
+        "name": "Orc",
+        "class": "orc",
+        "img": "15eV8TH1DL3YD1-KJaEpPEGSNnCZqBFhg",
+        "cost": 500,
+        "gps": 5,
+        "owned": 0,
+        "level": 0
+    },
+    {
+        "id": 4,
+        "name": "Monk",
+        "class": "monk",
+        "img": "1JN1k62tg5rFCDej97edh0WGNgEW-Kp8N",
+        "cost": 1200,
+        "gps": 12,
+        "owned": 0,
+        "level": 0
+    },
+    {
+        "id": 5,
+        "name": "Dark Mistress",
+        "class": "dark_mistress",
+        "img": "1cHpY1ZsVLbTI3k5JY1cGE9Kd0yRP4kUY",
+        "cost": 2500,
+        "gps": 25,
+        "owned": 0,
+        "level": 0
+    },
+    {
+        "id": 6,
+        "name": "Horned Reaper",
+        "class": "horned_reaper",
+        "img": "1zqEtBPuZ8jrFS51oTKi2BhSpHw_QT_t1",
+        "cost": 5000,
+        "gps": 50,
+        "owned": 0,
+        "level": 0
+    }
+]
