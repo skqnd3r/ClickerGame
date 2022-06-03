@@ -1,36 +1,3 @@
-//global var
-var minions = require("./minions.json");
-console.log(minions)
-// var minions = $.getJSON("./minions.json");
-// import data from "./data.json" assert { type: "json" };
-// fetch("./minions.json")
-    // .then(response => response.json())
-    // .then(data => minions = data.minions).then(console.log(minions));
-
-
-var rank;
-fetch("./rank.json")
-    .then(response => response.json())
-    .then(data => rank = data.rank);
-
-
-// function retrieve(f_name) {
-//     let data = fetch("./"+f_name+".json")
-//     .then(response => response.json());
-//     let temp = Promise.resolve(data);
-//     temp.then(value => )
-//     return data;
-// }
-
-        // .then(data => {
-            // let temp = JSON.parse(data);
-            // return temp;
-    // })
-    // temp = temp.json();
-    // return temp.data;
-    // .then(result => temp = result.data);
-    // console.log(temp);
-
 var golds = 0;
 var clickvalue = 1;
 var level = 0;
@@ -40,7 +7,6 @@ var stepmax = 50;
 
 //start
 function start() {
-    // console.log(minions);
     displayRank();
     displayGolds();
     setGPS();
@@ -139,6 +105,7 @@ function displayCost() {
         if (golds < minions.cost) {
             displayer[1].style.color = "#463f3a";
         } else {
+            // console.log(displayer)
             displayer[1].style.color = "gold";
         }
     });
@@ -217,7 +184,7 @@ function displayRank() {
     //rank
     rank.forEach(function (rank) {
         if (rank.level == level) {
-            displayer[0].innerHTML = rank.rankname;
+            displayer[0].innerHTML = rank.name;
         }
     });
 }

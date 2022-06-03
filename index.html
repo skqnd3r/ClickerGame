@@ -3,10 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="script.js"></script>
-    <!-- <script src="minions.json"></script> -->
-    <!-- <script src="rank.json"></script> -->
-    <!-- <script id="data" type="application/json" src="minions.json"></script> -->
+    <script type="text/javascript" src="json.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +12,7 @@
     <title>Dungeon Whipper</title>
 </head>
 
-<body onload="start()">
+<body onload="loadjson()">
     <section class="store">
         <div class="title"></div>
 
@@ -22,58 +20,38 @@
             <!-- can be automated -->
             <div class="tableau">
 
-                <!-- pattern -->
-                <!-- <div class=minions>
-                    <div class="minions2">
-                        <div class="minions3">
-                            <img class="minions" src="http://drive.google.com/uc?export=view&id=1E6rF2pZTCrEPGiWCSLBZatUa0hCxcCSj">
-                            <ul class="minions">
-                                <li class="imp minions mname"></li>
-                                <li class="minions"><img class="money" src="./ressources/Chest 500x500pix.png"><span
-                                        class="imp minions"></span></li>
-                            </ul>
-                        </div>
-                        <h1 class="imp minions"></h1>
-                        <button class="minions" type="button" onclick="buyMinion(1);">Buy</button>
-                    </div>
-                    <div class="minions4">
-                        <div class="imp progress">
-                            <div class="bar imp"></div>
-                        </div>
-                        <div class="imp lvl"></div>
-                    </div>
-                </div> -->
-
                 <!-- imp -->
                 <div class=minions>
                     <div class="minions2">
                         <div class="minions3">
-                            <img class="minions" src="http://drive.google.com/uc?export=view&id=1E6rF2pZTCrEPGiWCSLBZatUa0hCxcCSj">
+                            <img class="minions" src="./resources/Imp_500x500.png">
                             <ul class="minions">
                                 <li class="imp minions mname"></li>
-                                <li class="minions"><img class="money" src="./ressources/Chest 500x500pix.png"><span
+                                <li class="minions"><img class="money" src="./resources/Chest_500x500.png"><span
                                         class="imp minions"></span></li>
                             </ul>
                         </div>
                         <h1 class="imp minions"></h1>
                         <button class="minions" type="button" onclick="buyMinion(1);">Buy</button>
                     </div>
+
                     <div class="minions4">
                         <div class="imp progress">
                             <div class="bar imp"></div>
                         </div>
                         <div class="imp lvl"></div>
                     </div>
+
                 </div>
 
                 <!-- demon_spawner -->
                 <div class=minions>
                     <div class="minions2">
                         <div class="minions3">
-                            <img class="minions" src="./ressources/Spawned 500x500pix.png">
+                            <img class="minions" src="./resources/Spawned_500x500.png">
                             <ul class="minions">
                                 <li class="demon_spawner minions mname"></li>
-                                <li class="minions"><img class="money" src="./ressources/Chest 500x500pix.png"><span
+                                <li class="minions"><img class="money" src="./resources/Chest_500x500.png"><span
                                         class="demon_spawner minions"></span></li>
                             </ul>
                         </div>
@@ -92,12 +70,13 @@
                 <div class=minions>
                     <div class="minions2">
                         <div class="minions3">
-                            <img class="minions" src="./ressources/Orc 500x500pix.png">
+                            <img class="minions" src="./resources/Orc_500x500.png">
 
                             <ul class="minions">
                                 <li class="orc minions mname"></li>
-                                <li class="minions"><img class="money" src="./ressources/Chest 500x500pix.png"><span
-                                        class="orc minions"></span></li>
+                                <li class="minions"><img class="money" src="./resources/Chest_500x500.png">
+                                    <span class="orc minions"></span>
+                                </li>
                             </ul>
                         </div>
                         <h1 class="orc minions"></h1>
@@ -115,11 +94,11 @@
                 <div class=minions>
                     <div class="minions2">
                         <div class="minions3">
-                            <img class="minions" src="./ressources/Monk 500x500pix.png">
+                            <img class="minions" src="./resources/Monk_500x500.png">
 
                             <ul class="minions">
                                 <li class="monk minions mname"></li>
-                                <li class="minions"><img class="money" src="./ressources/Chest 500x500pix.png"><span
+                                <li class="minions"><img class="money" src="./resources/Chest_500x500.png"><span
                                         class="monk minions"></span></li>
                             </ul>
                         </div>
@@ -138,12 +117,13 @@
                 <div class=minions>
                     <div class="minions2">
                         <div class="minions3">
-                            <img class="minions" src="./ressources/darkmistress 500x500pix.png">
+                            <img class="minions" src="./resources/Dark_Mistress_500x500.png">
 
                             <ul class="minions">
                                 <li class="dark_mistress minions mname"></li>
-                                <li class="minions"><img class="money" src="./ressources/Chest 500x500pix.png"><span
-                                        class="dark_mistress minions"></span></li>
+                                <li class="minions"><img class="money" src="./resources/Chest_500x500.png">
+                                    <span class="dark_mistress minions"></span>
+                                </li>
                             </ul>
                         </div>
                         <h1 class="dark_mistress minions"></h1>
@@ -162,11 +142,11 @@
                 <div class=minions>
                     <div class="minions2">
                         <div class="minions3">
-                            <img class="minions" src="./ressources/Horned 500x500pix.png">
+                            <img class="minions" src="./resources/Horned_Reaper_500x500.png">
 
                             <ul class="minions">
                                 <li class="horned_reaper minions mname"></li>
-                                <li class="minions"><img class="money" src="./ressources/Chest 500x500pix.png"><span
+                                <li class="minions"><img class="money" src="./resources/Chest_500x500.png"><span
                                         class="horned_reaper minions"></span></li>
                             </ul>
                         </div>
@@ -181,14 +161,12 @@
                     </div>
                 </div>
 
-
-
-
+                
             </div>
         </section>
         <div class="gps">
             <div class="gps2">
-                <img class="gps1" src="./ressources/Sablier 500x500pix.png">
+                <img class="gps1" src="./resources/Hourglass_500x500.png">
                 <h1><span id="gps"></span> golds/s</h1>
                 <p class="gps"> </p>
             </div>
@@ -205,15 +183,15 @@
         </div>
         <div class="click">
             <div class="mining">
-                <img onclick="addGold()" class="mine" src="./ressources/gobl1.png">
-                <img hidden onclick="addGold()" class="mine" src="./ressources/gobl2.png">
-                <img hidden class="mine rock" src="./ressources/rock.png">
+                <img onclick="addGold()" class="mine" src="./resources/Gobl1_500x500.png">
+                <img hidden onclick="addGold()" class="mine" src="./resources/Gobl2_500x500.png">
+                <img hidden class="mine rock" src="./resources/Rock_500x500.png">
             </div>
         </div>
         <div class="gold">
             <button type="button" class="gold" onclick="save()">Save</button>
             <section class="gold">
-                <img class="gps2" src="./ressources/Chest 500x500pix.png">
+                <img class="gps2" src="./resources/Chest_500x500.png">
                 <h1><span id="gold"></span> golds</label>
             </section>
             <button type="button" class="gold" onclick="load()">Load</button>
