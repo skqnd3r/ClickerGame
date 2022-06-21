@@ -103,7 +103,7 @@ function displayCost() {
     minions.forEach(function (minions) {
         var displayer = document.getElementsByClassName(minions.class);
         if (golds < minions.cost) {
-            displayer[1].style.color = "#463f3a";
+            displayer[1].style.color = "#58524D";
         } else {
             // console.log(displayer)
             displayer[1].style.color = "gold";
